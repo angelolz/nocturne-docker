@@ -16,4 +16,4 @@ COPY --from=builder /nocturne-ui/.next/static ./.next/static
 COPY --from=builder /nocturne-ui/public ./public
 
 EXPOSE 3000
-CMD ["node", "./.next/standalone/server.js"]
+CMD ["node", "server.js"]
