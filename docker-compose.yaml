@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   nocturne:
-    image: ghcr.io/angelolz/nocturne-docker:latest
+    image: ghcr.io/angelolz/nocturne-ui:latest
     restart: unless-stopped
     container_name: nocturne
     ports:
