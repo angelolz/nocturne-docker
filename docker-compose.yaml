@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  frontend:
+    image: ghcr.io/angelolz/nocturne-docker:latest
+    container_name: nocturne
+    ports:
+      - "3000:3000"
