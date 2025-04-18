@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  frontend:
+  nocturne:
     image: ghcr.io/angelolz/nocturne-docker:latest
     restart: unless-stopped
     container_name: nocturne
