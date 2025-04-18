@@ -2,6 +2,7 @@ version: '3.8'
 services:
   frontend:
     image: ghcr.io/angelolz/nocturne-docker:latest
+    restart: unless-stopped
     container_name: nocturne
     ports:
       - "3000:3000" # You can change the left-hand side to any port. Don't touch the right side.

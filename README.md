@@ -11,7 +11,7 @@ The version of Nocturne used will depend on what the latest commit is in the `ma
 
 ## Through Docker
 1. Run `docker pull ghcr.io/angelolz/nocturne-ui:latest` in a terminal.
-2. Run `docker run -p 3000:3000 ghcr.io/angelolz/nocturne-ui:latest`.
+2. Run `docker run -d --restart unless-stopped -p 3000:3000 ghcr.io/angelolz/nocturne-ui:latest`.
 
 You can now access the page through `http://localhost:3000`. If you want to access it on the Car Thing, read ahead.
 # Access Nocturne on the Car Thing
