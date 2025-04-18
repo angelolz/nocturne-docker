@@ -11,7 +11,7 @@ RUN npm run build
 FROM node:20 AS runner
 WORKDIR /nocturne-ui
 
-COPY --from=builder /nocturne-ui/.next/standalone ./.next/standalone
+COPY --from=builder /nocturne-ui/.next/standalone ./
 COPY --from=builder /nocturne-ui/.next/static ./.next/static
 COPY --from=builder /nocturne-ui/public ./public
 
